@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// User Defined Functions
 int add(int a, int b) {
     return a + b;
 }
@@ -32,7 +31,7 @@ int mod(int a, int b) {
 int main() {
     int choice, a, b;
 
-    while(1) {  // endless loop
+    while(1) {  
         printf("\nMenu:\n");
         printf("Press 1 for +\n");
         printf("Press 2 for -\n");
@@ -46,10 +45,9 @@ int main() {
 
         if(choice == 0) {
             printf("Exiting the program. Goodbye!\n");
-            break;  // exit the loop
+            break; 
         }
 
-        // For valid choices, take input numbers
         if(choice >= 1 && choice <= 5) {
             printf("Enter the first number: ");
             scanf("%d", &a);
@@ -80,3 +78,4 @@ int main() {
 
     return 0;
 }
+
